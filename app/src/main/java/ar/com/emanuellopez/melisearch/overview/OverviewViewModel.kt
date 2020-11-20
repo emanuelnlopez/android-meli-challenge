@@ -38,7 +38,7 @@ class OverviewViewModel(searchTerm: SearchTerm) : ViewModel() {
         _navigateToSelectedProduct.value = product
     }
 
-    fun displayPropertyDetailsComplete() {
+    fun displayProductDetailsComplete() {
         _navigateToSelectedProduct.value = null
     }
 

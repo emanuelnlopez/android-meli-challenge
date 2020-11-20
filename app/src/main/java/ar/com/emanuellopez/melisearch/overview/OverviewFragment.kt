@@ -32,7 +32,7 @@ class OverviewFragment : Fragment() {
         overviewViewModel.navigateToSelectedProduct.observe(viewLifecycleOwner, Observer {
             if (null != it) {
                 this.findNavController().navigate(OverviewFragmentDirections.actionShowDetail(it))
-                overviewViewModel.displayPropertyDetailsComplete()
+                overviewViewModel.displayProductDetailsComplete()
             }
         })
         return binding.root

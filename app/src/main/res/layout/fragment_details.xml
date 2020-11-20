@@ -32,7 +32,7 @@
                 tools:src="@tools:sample/backgrounds/scenic" />
 
             <TextView
-                android:id="@+id/property_title"
+                android:id="@+id/product_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -52,7 +52,7 @@
                 android:textColor="#de000000"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/property_title"
+                app:layout_constraintTop_toBottomOf="@+id/product_title"
                 tools:text="$100,000" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
