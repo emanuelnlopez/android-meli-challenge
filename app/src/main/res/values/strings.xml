@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MELI Search</string>
+    <string name="search">Buscar</string>
+    <string name="search_hint">Ingrese producto a buscar</string>
 </resources>
