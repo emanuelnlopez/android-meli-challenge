@@ -12,8 +12,7 @@
         tools:layout="@layout/fragment_search">
         <action
             android:id="@+id/action_showOverview"
-            app:destination="@id/overviewFragment"
-            app:popUpTo="@id/searchFragment" />
+            app:destination="@id/overviewFragment" />
     </fragment>
 
     <fragment
@@ -23,8 +22,7 @@
         tools:layout="@layout/fragment_overview">
         <action
             android:id="@+id/action_showDetail"
-            app:destination="@id/detailsFragment"
-            app:popUpTo="@id/overviewFragment" />
+            app:destination="@id/detailsFragment" />
         <argument
             android:name="searchTerm"
             app:argType="ar.com.emanuellopez.melisearch.network.SearchTerm" />
