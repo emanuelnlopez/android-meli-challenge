@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/searchFragment">
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="ar.com.emanuellopez.melisearch.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_showOverview"
+            app:destination="@id/overviewFragment"
+            app:popUpTo="@id/searchFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/overviewFragment"
+        android:name="ar.com.emanuellopez.melisearch.overview.OverviewFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_overview">
+        <action
+            android:id="@+id/action_showDetail"
+            app:destination="@id/detailsFragment"
+            app:popUpTo="@id/overviewFragment" />
+        <argument
+            android:name="searchTerm"
+            app:argType="ar.com.emanuellopez.melisearch.network.SearchTerm" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="ar.com.emanuellopez.melisearch.details.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details">
+        <argument
+            android:name="selectedProduct"
+            app:argType="ar.com.emanuellopez.melisearch.network.Product" />
+    </fragment>
+
+</navigation>
